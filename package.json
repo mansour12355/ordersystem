@@ -1,26 +1,23 @@
 {
-    "name": "restaurant-orders-backend",
+    "name": "restaurant-orders-app",
     "version": "1.0.0",
-    "description": "Backend server for restaurant ordering system",
-    "main": "server.js",
+    "description": "Full-stack restaurant ordering system with real-time updates",
+    "main": "backend/server.js",
     "scripts": {
-        "start": "node server.js",
-        "dev": "node server.js"
+        "start": "cd backend && npm install && node server.js",
+        "install-backend": "cd backend && npm install",
+        "dev": "cd backend && npm run dev"
     },
     "keywords": [
         "restaurant",
         "orders",
-        "express",
-        "websocket"
+        "food",
+        "delivery"
     ],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "express": "^4.18.2",
-        "express-session": "^1.17.3",
-        "sqlite3": "^5.1.6",
-        "ws": "^8.14.2",
-        "bcrypt": "^5.1.1",
-        "cors": "^2.8.5"
+    "engines": {
+        "node": ">=18.0.0",
+        "npm": ">=9.0.0"
     }
 }
